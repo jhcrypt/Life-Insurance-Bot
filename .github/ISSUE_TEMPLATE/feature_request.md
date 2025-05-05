@@ -1,23 +1,32 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
+name: Feature Request
+about: Suggest an idea or enhancement for the Insurance Chat module
+title: '[FEATURE] '
+labels: enhancement
 assignees: ''
 ---
 
-**Is your feature request related to a problem? Please describe:**
+## Feature Description
+A clear and concise description of the feature you'd like to see implemented.
 
-<!-- A clear and concise description of what the problem is. Ex. I'm always frustrated when [...] -->
+## Problem Statement
+Describe the problem or limitation this feature would address. 
+Ex: I'm always frustrated when [...]
 
-**Describe the solution you'd like:**
+## Proposed Solution
+Describe how you envision this feature working. Be as specific as possible.
 
-<!-- A clear and concise description of what you want to happen. -->
+## Alternative Solutions
+Describe any alternative solutions or features you've considered.
 
-**Describe alternatives you've considered:**
+## Use Cases
+Provide examples of how this feature would be used in real-world scenarios.
 
-<!-- A clear and concise description of any alternative solutions or features you've considered. -->
+## Implementation Ideas
+If you have thoughts on how this could be implemented, please share them (optional).
 
-**Additional context:**
+## Additional Context
+Add any other context, screenshots, diagrams, or examples related to the feature request here.
 
-<!-- Add any other context or screenshots about the feature request here. -->
+## Impact Assessment
+How would this feature benefit users of the Insurance Chat module? Would it have broad appeal or serve a specific use case?
