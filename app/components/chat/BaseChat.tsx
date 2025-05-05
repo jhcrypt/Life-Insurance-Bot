@@ -19,7 +19,7 @@ import * as Tooltip from '@radix-ui/react-tooltip';
 import styles from './BaseChat.module.scss';
 import { ExportChatButton } from '~/components/chat/chatExportAndImport/ExportChatButton';
 import { ImportButtons } from '~/components/chat/chatExportAndImport/ImportButtons';
-import { ExamplePrompts } from '~/components/chat/ExamplePrompts';
+import { InsurancePrompts } from '~/components/chat/InsurancePrompts';
 import GitCloneButton from './GitCloneButton';
 
 import FilePreview from './FilePreview';
@@ -520,7 +520,7 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
                         minHeight: TEXTAREA_MIN_HEIGHT,
                         maxHeight: TEXTAREA_MAX_HEIGHT,
                       }}
-                      placeholder="How can Bolt help you today?"
+                    placeholder="Ask me anything about life & health insurance..."
                       translate="no"
                     />
                     <ClientOnly>
@@ -604,15 +604,15 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
                   <GitCloneButton importChat={importChat} />
                 </div>
               )}
-              {!chatStarted &&
-                ExamplePrompts((event, messageInput) => {
-                  if (isStreaming) {
-                    handleStop?.();
-                    return;
-                  }
+            {!chatStarted &&
+            InsurancePrompts((event, messageInput) => {
+                if (isStreaming) {
+                handleStop?.();
+                return;
+                }
 
-                  handleSendMessage?.(event, messageInput);
-                })}
+                handleSendMessage?.(event, messageInput);
+            })}
               {!chatStarted && <StarterTemplates />}
             </div>
           </div>
